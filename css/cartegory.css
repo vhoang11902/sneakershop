@@ -19,7 +19,7 @@ li{
     width: 100%;
     z-index: 999;
     transition: all 0.2s ;
-    background-color:antiquewhite;   
+    background-color:white;   
 }
 .top.active1 {
     padding: 0 20px 15px;
