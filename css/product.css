@@ -107,6 +107,7 @@ footer{
     padding: 0px 50px 100px;
     height: 50px;
     border-top: 1px solid black;
+    
 }
 .footer-left{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -334,7 +335,6 @@ footer{
     width: 30%;
     text-align: center;
     padding: 0 6px;
-   
 }
 .product-related-item img {
     width: 100%;

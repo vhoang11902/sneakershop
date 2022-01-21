@@ -285,36 +285,36 @@ a.sub_menu{
 
 
 
-    /*-------------footer-----------*/
+/*-------------footer-----------*/
 footer{
     display: flex;
     justify-content: space-between;
     padding: 0px 50px 100px;
     height: 50px;
-        
+    border-top: 1px solid black;
+    
 }
 .footer-left{
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        flex: 1;
-    }
-    .footer-left>li{
-        margin-top: 10px;
-    }
-    .footer-left > li:first-child{
-        position: relative;
-    }
-    .footer-left> li>input{
-        margin-top: 20px;
-        width: 50%;
-        border:none;
-        border-bottom: 1px solid black;
-    }
-    .footer-right{
-        display: flex;
-    }
-    .footer-right>li{
-        margin-top: 40px;
-        padding: 0 20px;
-        position: relative;
-    }
-    
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex: 1;
+}
+.footer-left>li{
+    margin-top: 10px;
+}
+.footer-left > li:first-child{
+    position: relative;
+}
+.footer-left> li>input{
+    margin-top: 20px;
+    width: 50%;
+    border:none;
+    border-bottom: 1px solid black;
+}
+.footer-right{
+    display: flex;
+}
+.footer-right>li{
+    margin-top: 40px;
+    padding: 0 20px;
+    position: relative;
+}
