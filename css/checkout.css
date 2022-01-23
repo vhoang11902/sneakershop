@@ -25,7 +25,7 @@ li{
     transition: all 0.2s ;
     background-color:transparent;   
 }
-.top.active1 {
+.top.active {
     padding: 0 20px 15px;
     align-items: center;
     display: flex;
@@ -34,7 +34,8 @@ li{
     width: 100%;
     z-index: 999;
     transition: all 0.2s;
-    background-color:white;   
+    background-color:white;
+    box-shadow: 0 2px 1rem #ccc;   
 }
 
 a{
@@ -47,10 +48,10 @@ a.sub_menu{
     text-decoration: none;
     font-size: 14px;
 }
-.menu{
+.menu-left{
     display: flex;
 }
-.menu>li{
+.menu-left>li{
     margin-top: 15px;
     padding: 0 20px;
     position: relative;
@@ -67,13 +68,13 @@ a.sub_menu{
     top: 50px;
     border-radius: 5px;
 }
-.menu>li:hover .sub_menu{
+.menu-left>li:hover .sub_menu{
     visibility: visible;
     top:30;
 }
 #Slider{
     padding-bottom: 30px;
-    border-bottom: 2px solid #000;
+    border-bottom: 1px solid #000;
     overflow: hidden;
 }
 .menu>li>a{
@@ -86,14 +87,14 @@ a.sub_menu{
     margin-top: 12px;
     font-size: 20px;
 }
-.menu_phu{
+.menu-right{
     margin-top: 15px;
     display: flex;
 }
-.menu_phu>li{
+.menu-right>li{
     padding: 0 20px;
 }
-.menu_phu>li:hover .sub_menu{
+.menu-right>li:hover .sub_menu{
     visibility: visible;
     top:30;
 }

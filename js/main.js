@@ -24,17 +24,24 @@ function slider(index){
 setInterval(imgSlide,5000)
 const itemsliderbar = document.querySelectorAll(".cartegory-left-li")
 itemsliderbar.forEach(function(menu,index){
-   menu.addEventListener("click",function(){
+menu.addEventListener("click",function(){
     menu.classList.toggle("block")
-   })
+            })
 })
 const header = document.querySelector('.top');
 window.onscroll = function(){
     var top = window.scrollY;
     console.log(top);
     if (top>= 30){
-        header.classList.add('active1')
+        header.classList.add('active')
     }else{
-        header.classList.remove('active1')
+        header.classList.remove('active')
     }
 }
+const bigImg = document.querySelector(".product-content-left-big-img img")
+const smalImg =  document.querySelectorAll(".product-content-left-small-img img")
+smalImg.forEach(function(imgItem,X){
+    imgItem.addEventListener("click",function(){
+    bigImg.src = imgItem.src
+    })
+})

@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/54f0cb7e4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/signin.css">
 </head>
-
 <body>
     <section class="top">
         <div class="menu-left">
@@ -72,37 +72,51 @@
             </li>
         </div>
     </section>
-    <section id="Slider">
-        <div class="aspect-ratio-169">
-            <img src="img/slide1.png">
-            <img src="img/slide2.jpg">
-            <img src="img/slide3.jpg">
+<section class="container">
+    <div class="signin-content">
+        <div class="signin-content-caption">
+            <p><span style="font-weight: bold;">SIGN IN</span></p>
         </div>
-        <div class="dot-container">
-            <div class="dot active"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+        <div class="signin-content-input">
+            <form autocomplete="on">
+                <div class="signin-content-input">
+                    <input type="email" placeholder="EMAIL" autocomplete="off">
+                </div>
+                <div class="signin-content-input">
+                    <input type="text" placeholder="PASSWORD">
+                </div>
+                <div class="signin-content-input">
+                    <input type="submit" value="SIGN IN">
+                    <label><a href="#">Forget your password!</a></label>
+                    <label>You didn't has an account! <a href="#">Register an account</a></label>
+                </div>
+            </form>
         </div>
-    </section>
-    <section class="main-center">
-        <div class="main-center-img">
-            <a href="#"><img src="img/home1.png"></a>
-            <a href="#"><img src="img/home2.png"></a>
-            <a href="#"><img src="img/home3.png"></a>
-        </div>
-    </section>
-    <footer>
-        <div class="footer-left">
-            <li>Join the conversation</li>
-            <li><input placeholder="Enter your email" type="text"> </li>
-        </div>
-        <div class="footer-right">
-            <li><a href="#">CONTACT</a></li>
-            <li><a href="#">CLIENT SERVICES</a></li>
-            <li><a href="#">LEGAL NOTICES</a></li>
-            <li><a href="#">SOCIAL</a></li>
-        </div>
-    </footer>
+        <div></div>
+        <div></div>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-left">
+        <li>Join the conversation</li>
+        <li>
+            <input placeholder="Enter your email" type="text">
+            <i class="fas fa-arrow-right"></i>
+        </li>
+    </div>
+    <div class="footer-right">
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">CLIENT SERVICES</a></li>
+        <li><a href="#">LEGAL NOTICES</a></li>
+        <li><a href="#">SOCIAL</a></li>
+    </div>
+</footer>
 </body>
-<script src="js/main.js"></script>
+<script>
+    var input = document.getElementById('signin-content-input');
+    input.oninvalid = function(event) {
+	event.target.setCustomValidity('Username should only contain lowercase letters. e.g. john');
+}
+</script>
 </html>
